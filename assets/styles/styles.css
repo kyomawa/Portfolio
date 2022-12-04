@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  margin-bottom: 10.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 3;
+}
+
+.LogoB {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.LogoB span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.List {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.List a {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  gap: 0.25rem;
+}
+
+.home {
+  display: flex;
+}
+
+.title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 6.5rem;
+}
+
+.title h2 {
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.title h3 {
+  font-size: 2rem;
+}
+
+.space {
+  width: 50%;
+}
+
+
+.home_fond {
+  position: absolute;
+  top: -200px;
+  right: 0;
+  z-index: 2;
+}
+
+.bar {
+  margin-top: 19.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  background: #252525;
+  position: relative;
+  z-index: 3;
+}
+
+.bar p {
+  font-size: 1.25rem;
+  color: #FAFAFA;
+}
+
+.title h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  animation:
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+.containersubtitleb {
+  margin-top: 1.25%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.containersubtitleb h1 {
+  font-size: 3.5rem;
+}
+
+.containersubtitleb img {
+  width: 64px;
+  height: 64px;
+}
+
+.containersubtitlew {
+  margin-top: 1.25%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.containersubtitlew h1 {
+  color: #FAFAFA;
+  font-size: 3.5rem;
+}
+
+.containersubtitlew img {
+  width: 64px;
+  height: 64px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-bottom: 5%;
+}
+
+.projects__container {
+  display: flex;
+  gap: 6.5rem;
+}
+
+.projects__container-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 400px;
+  padding: 64px 16px;
+  background-color: #252525;
+  border-radius: 36px;
+}
+
+.projects__container-cards p {
+  color: #FAFAFA;
+}
+
+hr {
+  min-width: 350px;
+}
+
+.skills {
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.skills__container {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.skills__container-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills__container-lists-cards {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.git_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.git_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.git_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.figma_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.figma_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.figma_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.html_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.html_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.html_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.css_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.css_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.css_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.csharp_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.csharp_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.csharp_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.js_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.js_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.js_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.php_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.php_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.php_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.sql_container_bar {
+  position: relative;
+  width: 25rem;
+  height: 4vh;
+}
+
+.sql_container_bar_1 {
+  z-index: 2;
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.sql_container_bar_2 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  width: 75%;
+  height: 4vh;
+  border-radius: 24px;
+}
+
+.training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 7.5rem;
+}
+
+.training__list {
+  display: flex;
+  margin: 2.5rem 10px 0 2.5rem;
+  overflow: auto;
+  white-space: nowrap;
+  width: 80%;
+  gap: 5rem;
+}
+
+.training__list-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: 0.849655px solid rgba(0, 0, 0, 0.1);
+  border-radius: 48px;
+  padding: 20px 40px;
+}
+
+.training__list-cards h1 {
+  font-size: 1.75rem;
+}
+
+
+
+
+
+
+.contact {
+  display: flex;
+}
+
+.contact__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.contact__image {
+  width: 50%;
+  position: relative;
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.contact__image img {
+  position: absolute;
+  bottom: 0;
+}
+
+.contact__form-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__form-name input {
+  width: 450px;
+  height: 50px;
+  border-radius: 24px;
+  border: none;
+}
+
+.contact__form-name label {
+  font-size: 1.25rem;
+}
+
+.contact__form-object {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__form-object input {
+  width: 450px;
+  height: 50px;
+  border-radius: 24px;
+  border: none;
+}
+
+.contact__form-object label {
+  font-size: 1.25rem;
+}
+
+.contact__form-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__form-message textarea {
+  width: 450px;
+  height: 350px;
+  border-radius: 24px;
+  border: none;
+}
+
+.contact__form-message label {
+  font-size: 1.25rem;
+}
+
+.btnvalider {
+  border: none;
+  background-color: #252525;
+  color: #FAFAFA;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
