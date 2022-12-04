@@ -5,6 +5,7 @@
   font-size: 16px;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
 nav {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   justify-content: space-between;
   margin-bottom: 10.5rem;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -47,6 +48,14 @@ nav {
   font-size: 1.25rem;
   font-weight: bold;
   gap: 0.25rem;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
 }
 
 .home {
@@ -91,19 +100,29 @@ nav {
 }
 
 .bar {
+  background-color: #252525;
+  position: relative;
+  z-index: 3;
   margin-top: 19.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 1rem;
-  background: #252525;
-  position: relative;
-  z-index: 3;
 }
 
 .bar p {
   font-size: 1.25rem;
   color: #FAFAFA;
+}
+
+@keyframes Scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .title h1 {
@@ -147,7 +166,6 @@ nav {
 }
 
 .containersubtitleb {
-  margin-top: 1.25%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -163,7 +181,6 @@ nav {
 }
 
 .containersubtitlew {
-  margin-top: 1.25%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -181,11 +198,11 @@ nav {
 
 .projects {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  gap: 3.5rem;
-  padding-bottom: 5%;
+  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .projects__container {
@@ -199,7 +216,7 @@ nav {
   flex-direction: column;
   gap: 4rem;
   max-width: 400px;
-  padding: 64px 16px;
+  padding: 80px 24px;
   background-color: #252525;
   border-radius: 36px;
 }
@@ -217,8 +234,11 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
-  padding-bottom: 3rem;
+  justify-content: space-evenly;
+  /* padding-top: 1.5rem;
+  padding-bottom: 4.5rem; */
+  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .skills__container {
@@ -499,9 +519,10 @@ hr {
 .training {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 7.5rem;
+  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .training__list {
@@ -513,6 +534,22 @@ hr {
   gap: 5rem;
 }
 
+::-webkit-scrollbar {
+  width: 0.75em;
+
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #FFB648 0%, #FF5D5D 100%);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border-radius: 100vw;
+}
+
+
 .training__list-cards {
   display: flex;
   flex-direction: column;
@@ -522,6 +559,7 @@ hr {
   border: 0.849655px solid rgba(0, 0, 0, 0.1);
   border-radius: 48px;
   padding: 20px 40px;
+  margin-bottom: 5vh;
 }
 
 .training__list-cards h1 {
@@ -530,11 +568,10 @@ hr {
 
 
 
-
-
-
 .contact {
   display: flex;
+  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .contact__form {
@@ -567,6 +604,15 @@ hr {
   gap: 0.5rem;
 }
 
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
 .contact__form-name input {
   width: 450px;
   height: 50px;
@@ -575,6 +621,23 @@ hr {
 }
 
 .contact__form-name label {
+  font-size: 1.25rem;
+}
+
+.contact__form-mail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__form-mail input {
+  width: 450px;
+  height: 50px;
+  border-radius: 24px;
+  border: none;
+}
+
+.contact__form-mail label {
   font-size: 1.25rem;
 }
 

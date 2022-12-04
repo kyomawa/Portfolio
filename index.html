@@ -19,15 +19,15 @@
         <span>Bryan.</span>
       </div>
       <div class="List">
-        <a href="">Projets <img src="assets/img/Folder.png" alt="" width="34px"></a>
-        <a href="">Compétences <img src="assets/img/star.png" alt="" width="34px"></a>
-        <a href="">Formations <img src="assets/img/Trophy.png" alt="" width="34px"></a>
-        <a href="">Me Contacter <img src="assets/img/contact.png" alt="" width="34px"></a>
+        <a class="grow" href="#slide-1">Projets <img src="assets/img/Folder.png" alt="" width="34px"></a>
+        <a class="grow" href="#slide-2">Compétences <img src="assets/img/star.png" alt="" width="34px"></a>
+        <a class="grow" href="#slide-3">Formations <img src="assets/img/Trophy.png" alt="" width="34px"></a>
+        <a class="grow" href="#slide-4">Me Contacter <img src="assets/img/contact.png" alt="" width="34px"></a>
       </div>
     </nav>
   </header>
 
-  <div class="home">
+  <div class="home page">
     <div class="title">
       <h1>Chef de Projet SI</h1>
       <h2 data-aos="fade-up" data-aos-duration="2500">en devenir</h2>
@@ -53,20 +53,20 @@
     <img src="/assets/img/Logo.png" alt="" width="48px">
   </div>
 
-  <div class="projects">
-    <div class="containersubtitleb">
+  <div class="projects page" id="slide-1">
+    <div class="containersubtitleb" data-aos="fade-up" data-aos-duration="1000">
       <h1 class="subtitleb">Projets</h1>
       <img src="/assets/img/Folder.png" alt="">
     </div>
     <div class="projects__container">
-      <div class="projects__container-cards">
+      <div class="projects__container-cards" data-aos="fade-up-right" data-aos-duration="1000">
         <img src="/assets/img/Prolent.png" alt="" width="auto" height="200px">
         <hr>
         <p>Réalisation de la maquette d’un site hébergeant un jeu vidéo escape game dont le but était de s’échapper en
           prouvant ses
           talents en tant que Chef de Projet SI.</p>
       </div>
-      <div class="projects__container-cards">
+      <div class="projects__container-cards" data-aos="fade-up-left" data-aos-duration="1000">
         <img src="/assets/img/CodeSoluce.png" alt="" width="auto" height="200px">
         <hr>
         <p>Réalisation d’une maquette d'un site de base de connaissances qui permets à des gens de résoudre les erreurs
@@ -75,13 +75,13 @@
     </div>
   </div>
 
-  <div class="skills">
-    <div class="containersubtitlew">
+  <div class="skills page" id="slide-2">
+    <div class="containersubtitlew" data-aos="fade-down" data-aos-duration="1000">
       <h1 class="subtitlew">Compétences</h1>
       <img src="/assets/img/star.png" alt="">
     </div>
     <div class="skills__container">
-      <div class="skills__container-lists">
+      <div class="skills__container-lists" data-aos="fade-right" data-aos-duration="1000">
         <div class="skills__container-lists-cards">
           <img src="/assets/img/Logo _ Git.png" alt="" width="128px" height="128px">
           <div class="git_container_bar">
@@ -111,7 +111,8 @@
           </div>
         </div>
       </div>
-      <div class="skills__container-lists">
+
+      <div class="skills__container-lists" data-aos="fade-left" data-aos-duration="1000">
         <div class="skills__container-lists-cards">
           <img src="/assets/img/csharp.png" alt="" width="128px" height="128px">
           <div class="csharp_container_bar">
@@ -144,39 +145,37 @@
     </div>
   </div>
 
-  <div class="training">
-    <div class="containersubtitleb">
+  <div class="training page" id="slide-3">
+    <div class="containersubtitleb" data-aos="flip-up" data-aos-duration="1000">
       <h1 class="subtitleb">Formations</h1>
       <img src="/assets/img/Trophy.png" alt="">
     </div>
 
-    <div class="training__list">
-      <div class="training__list-cards">
+    <div class="training__list page">
+      <div class="training__list-cards" data-aos="zoom-in-down" data-aos-duration="1000">
         <h1>Developpeur Back-End</h1>
         <img src="/assets/img/g4.png" alt="" height="">
       </div>
-      <div class="training__list-cards">
+      <div class="training__list-cards" data-aos="zoom-in-down" data-aos-duration="1000">
         <h1>Developpeur Back-End</h1>
         <img src="/assets/img/sncf.png" alt="">
       </div>
-      <div class="training__list-cards">
+      <div class="training__list-cards" data-aos="zoom-in-down" data-aos-duration="1000">
         <h1>Developpeur Back-End</h1>
         <img src="/assets/img/Lamartine.png" alt="">
       </div>
     </div>
-
-
-
   </div>
 
-  <div class="contact">
-    <div class="contact__image">
+  <div class="contact page" id="slide-4">
+    <div class="contact__image" data-aos="flip-right" data-aos-duration="1000">
       <div class="containersubtitlew">
-        <h1 class="subtitlew">Des questions ?</h1>
+        <h1 class="subtitlew" id="cont">Des questions ?</h1>
       </div>
       <img src="/assets/img/question.png" alt="">
     </div>
-    <form class="contact__form" action="">
+    <form class="contact__form" action="https://formspree.io/f/mrgjwbqe" method="post" data-aos="flip-left"
+      data-aos-duration="1000">
       <div class="containersubtitleb">
         <h1 class="subtitleb">Contactez-moi</h1>
         <img src="/assets/img/contact_black.png" alt="">
@@ -184,17 +183,22 @@
 
       <div class="contact__form-name">
         <label for="name">Nom :</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
+      </div>
+
+      <div class="contact__form-mail">
+        <label for="mail">Email :</label>
+        <input type="email" name="mail" id="mail" required>
       </div>
 
       <div class="contact__form-object">
         <label for="Object">Objet :</label>
-        <input type="text" name="Object" id="Object">
+        <input type="text" name="Object" id="Object" required>
       </div>
 
       <div class="contact__form-message">
         <label for="message">Message :</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
       </div>
 
       <input class="btnvalider" type="submit" value="Envoyer">
@@ -202,8 +206,8 @@
     </form>
 
   </div>
-
-  <script src="assets/js/style.js"></script>
+  <script src="/assets/js/style.js"></script>
+  <script src="assets/js/aos.js"></script>
   <script>AOS.init();</script>
 </body>
 
